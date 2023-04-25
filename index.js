@@ -9,7 +9,7 @@ http
     let url = req.url;
     if (url === "/") {
       fs.readFile(
-        path.join(__dirname, "public", "index.html"),
+        path.join(__dirname,"index.html"),
         (err, content) => {
           if (err) throw err;
           res.writeHead(200, { "Content-Type": "text/html" });
@@ -18,7 +18,7 @@ http
       );
     } else if (url === "/about") {
       fs.readFile(
-        path.join(__dirname, "public", "about.html"),
+        path.join(__dirname,"about.html"),
         (err, content) => {
           if (err) throw err;
           res.writeHead(200, { "Content-Type": "text/html" });
