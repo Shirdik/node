@@ -1,8 +1,12 @@
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
+const os = require('os');
 
 var data;
+let port = 8090;
+let hostname = os.hostname()
+console.log(hostname);
 
 http
   .createServer((req, res) => {
@@ -34,7 +38,7 @@ http
       res.end("<h1>404! Page not found.</h1>");
     }
   })
-  .listen();
+  .listen(port,hostname, `Running at ${hostname}:${port}`);
 
 
 
