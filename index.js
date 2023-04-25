@@ -8,39 +8,39 @@ let port = 8090;
 let hostname = os.hostname()
 console.log(hostname);
 
-http
-  .createServer((req, res) => {
-    let url = req.url;
-    if (url === "/") {
-      fs.readFile(
-        path.join(__dirname,"index.html"),
-        (err, content) => {
-          console.log('Home');
-          if (err) throw err;
-          res.writeHead(200, { "Content-Type": "text/html" });
-          res.end(content);
-        }
-        );
-      } else if (url === "/about") {
-        fs.readFile(
-          path.join(__dirname,"about.html"),
-          (err, content) => {
-          console.log('About');
-          if (err) throw err;
-          res.writeHead(200, { "Content-Type": "text/html" });
-          res.end(content);
-        }
-      );
-    } else if (url === "/api") {
-      res.setHeader("Access-Control-Allow-Origin", "*");
-      res.writeHead(200, { "Content-Type": "application/json" });
-      res.end(data);
-    } else {
-      res.writeHead(404, { "Content-Type": "text/html" });
-      res.end("<h1>404! Page not found.</h1>");
-    }
-  })
-  .listen(port,hostname, `Running at ${hostname}:${port}`);
+// http
+//   .createServer((req, res) => {
+//     let url = req.url;
+//     if (url === "/") {
+//       fs.readFile(
+//         path.join(__dirname,"index.html"),
+//         (err, content) => {
+//           console.log('Home');
+//           if (err) throw err;
+//           res.writeHead(200, { "Content-Type": "text/html" });
+//           res.end(content);
+//         }
+//         );
+//       } else if (url === "/about") {
+//         fs.readFile(
+//           path.join(__dirname,"about.html"),
+//           (err, content) => {
+//           console.log('About');
+//           if (err) throw err;
+//           res.writeHead(200, { "Content-Type": "text/html" });
+//           res.end(content);
+//         }
+//       );
+//     } else if (url === "/api") {
+//       res.setHeader("Access-Control-Allow-Origin", "*");
+//       res.writeHead(200, { "Content-Type": "application/json" });
+//       res.end(data);
+//     } else {
+//       res.writeHead(404, { "Content-Type": "text/html" });
+//       res.end("<h1>404! Page not found.</h1>");
+//     }
+//   })
+//   .listen(port,hostname, `Running at ${hostname}:${port}`);
 
 
 
