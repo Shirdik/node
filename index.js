@@ -13,7 +13,7 @@ http
     let url = req.url;
     if (url === "/") {
       fs.readFile(
-        path.join(__dirname,"index.html"),
+        path.join(__dirname, "public", "index.html"),
         (err, content) => {
           console.log('Home');
           if (err) throw err;
@@ -23,7 +23,7 @@ http
         );
       } else if (url === "/about") {
         fs.readFile(
-          path.join(__dirname,"about.html"),
+          path.join(__dirname, "public", "about.html"),
           (err, content) => {
           console.log('About');
           if (err) throw err;
