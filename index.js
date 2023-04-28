@@ -40,7 +40,7 @@ http
       res.end("<h1>404! Page not found.</h1>");
     }
   })
-  .listen(port `Running at ${hostname}:${port}`);
+  .listen(Number(process.env.PORT || 8080), `Running`);
 
 
 
