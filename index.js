@@ -40,7 +40,7 @@ http
       res.end("<h1>404! Page not found.</h1>");
     }
   })
-  .listen(Number(process.env.PORT || 8080), `Running`);
+  .listen(process.env.PORT,process.env.IP);
 
 
 
