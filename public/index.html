@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <style>:root {
+      --gray: #e2e8f0;
+      --border: #64748b;
+      --text: #1e293b;
+    }
+    *{
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: "Shantell Sans", cursive;
+      background-color: var(--gray);
+      color: var(--text);
+    }
+    
+    .inlineBlock {
+      display: inline-block;
+    }
+    
+    #nav,
+    #edu,
+    #project1,
+    #project2,
+    #xp1,
+    #xp2,
+    #footer {
+      margin: 0.5%;
+      border: var(--border) solid;
+      border-radius: 10px;
+    }
+    
+    .half {
+      width: 40%;
+      text-align: center;
+      vertical-align: middle;
+      padding: 2%;
+      padding-left: 4%;
+    }
+    
+    .top {
+      vertical-align: top;
+    }
+    
+    #nName,
+    #nLinks,
+    #nContact {
+      width: 30%;
+      padding: 1%;
+    }
+    
+    #nLinks > a {
+      padding: 9%;
+    }
+    
+    #nContact {
+      text-align: right;
+    }
+    a {
+      text-decoration: none;
+      text-decoration: underline;
+      color: black;
+    }
+    .leftAlign {
+      text-align: left;
+    }
+    h2, h3 {
+      font-size: larger;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    
+    img {
+      width: 200px;
+      border-radius: 10px;
+      margin-left: 10%;
+    }
+    
+    ul,
+    ol {
+      list-style: none;
+    }
+    
+    #footer > div {
+      width: 30%;
+      margin-left: 3%;
+    }
+    
+    #fAbout {
+      text-align: center;
+    }
+    
+    #fContact {
+      text-align: center;
+    }
+    
+    #xp1 {
+      margin-left: 5%;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <div id="nName" class="inlineBlock">SHIRDI</div>
+      <div id="nLinks" class="inlineBlock">
+        <a href="#title">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#xp">Experience</a>
+      </div>
+      <div id="nContact" class="inlineBlock">Contact</div>
+    </div>
+    <div id="title">
+      <div class="inlineBlock half">
+        <h2 class="tName ">Shirdi Kummarakuntla</h2>
+        <p class="About">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, a
+          modi. Aliquam atque doloremque ducimus repellendus deserunt quae! Nisi
+          fugit suscipit ratione dignissimos porro blanditiis deleniti enim
+          provident commodi animi?
+        </p>
+      </div>
+      <div class="inlineBlock half">
+        <img src="https://images.unsplash.com/photo-1682465184253-ac7d28a0452a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt=""/>
+      </div>
+    </div>
+    <div id="edu">
+      <div id="skills" class="half inlineBlock top">
+        <h2 class=" leftAlign">Skills</h2>
+        <ul>
+          <li>
+            <h3 class="">Skill1</h3>
+            <em>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad optio
+              id laudantium nulla soluta quas fuga eius suscipit? Harum,
+              officiis. Autem deleniti placeat illo velit adipisci dolorum
+              explicabo libero iusto.
+            </em>
+          </li>
+            <h3 class="">Skill2</h3>
+            <em>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad optio
+              id laudantium nulla soluta quas fuga eius suscipit? Harum,
+              officiis. Autem deleniti placeat illo velit adipisci dolorum
+              explicabo libero iusto.
+            </em>
+          </li>
+            <h3 class="">Skill3</h3>
+            <em>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad optio
+              id laudantium nulla soluta quas fuga eius suscipit? Harum,
+              officiis. Autem deleniti placeat illo velit adipisci dolorum
+              explicabo libero iusto.
+            </em>
+          </li>
+        </ul>
+      </div>
+      <div id="education" class="half inlineBlock top">
+        <h3 class=" leftAlign">Education</h3>
+        <ul>
+          <li>
+            <h3 class="">University of New Haven</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
+              doloremque consequuntur dolores at, ipsa recusandae. Velit maxime,
+              nihil distinctio mollitia vero delectus! Fugit inventore quo,
+              dolorem dicta nam repellat quibusdam.
+            </p>
+          </li>
+          <li>
+            <h3 class="">Lovely Professional University</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              vitae vel eos ipsa neque harum, expedita beatae, a aliquid,
+              recusandae illo velit! Laborum, harum! Porro eum cumque vitae at
+              quas.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="projects">
+      <h2 class=" leftAlign">Projects</h2>
+      <div id="project1">
+        <div class="inlineBlock half">
+          <h3 class="tName ">Project1</h3>
+          <p class="About">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            ducimus laudantium quidem necessitatibus assumenda reiciendis, qui
+            debitis perspiciatis culpa mollitia inventore? Optio, libero
+            incidunt officia maiores consequuntur blanditiis dolor aut.
+          </p>
+        </div>
+        <div class="inlineBlock half">
+          <img src="https://images.unsplash.com/photo-1683112009295-82f70d5022e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=396&q=80" alt=""/>
+        </div>
+      </div>
+      <div id="project2">
+        <div class="inlineBlock half">
+          <img src="https://images.unsplash.com/photo-1683112009295-82f70d5022e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=396&q=80" alt="" />
+        </div>
+        <div class="inlineBlock half">
+          <h3 class="tName ">Project2</h3>
+          <p class="About">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            molestias tempore dolores consequuntur vero quo error corrupti
+            sapiente, quidem corporis voluptatum. Possimus earum illo
+            consequatur laborum delectus, nemo odit quisquam!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="xp">
+      <h2 class=" leftAlign">Experience</h2>
+      <div id="xp1" class="half">
+        <div class="inlineBlock">
+          <h3 class="tName ">experience 1</h3>
+          <p class="About">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero,
+            doloribus deleniti neque voluptatem, minima nemo corporis deserunt
+            atque asperiores magni recusandae aliquid sint nobis voluptatum
+            rerum in! Fugit, dolor voluptate.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="inlineBlock half"></div>
+        <div id="xp2" class="inlineBlock half">
+          <h3 class="tName ">Experience 2</h3>
+          <p class="About">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+            delectus ratione eius ducimus est at deserunt quasi vel doloribus
+            adipisci explicabo sequi ut facilis vero accusamus, magnam nam
+            laborum cupiditate.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div id="finks" class="inlineBlock top">
+        <h3 class="">Links</h3>
+        <ul>
+          <li>
+            <a href="#title">Home</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#xp">Experience</a>
+          </li>
+        </ul>
+      </div>
+      <div  id="fAbout"class="inlineBlock">
+        <h3 class="">About</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores quis vero odio esse cum non atque, necessitatibus modi laudantium quas cupiditate, eligendi nulla, laboriosam neque numquam exercitationem temporibus minus quibusdam!</p>
+      </div>
+      <div id="fContact" class="inlineBlock top">
+        <h3 class="">Contact</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>LinkedIn</li>
+          <li>Instagram</li>
+        </ul>
+
+      </div>
+    </div>
+  </body>
+</html>
